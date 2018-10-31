@@ -13,11 +13,13 @@
 <h1>Currency exchange</h1>
 <h4>Log in here to access more exchange rates</h4>
 
-<input type="text" placeholder="Username" class="username" name="username" id="username"/>
-<input type="password" placeholder="Password" class="password" name="password" id="password" />
-<input type="button" class="button" value="Login" name="submit" id="submit" />
-<br>
-<span id="loginResult"></span>
+
+    <form name="Login">
+       
+        <input type="text" id="usrLogin" placeholder="Username" required>
+        <input type="password" id="pwLogin" placeholder="Password" required>
+        <input type="button" value="Login" id="login" onclick= "loginFunction()">
+    </form>
 <p></p>
 <h2>Not a user yet?</h2>
 
@@ -70,6 +72,8 @@
 </div>
 
 <script src="login1.js"></script>
+<script src="signup.js"></script>
+<script src="calculator.js"></script>
 
 </body>
 </html>

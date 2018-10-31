@@ -1,16 +1,14 @@
 // Sign up form
 
-var signup = document.getElementById('signup');
+function safeInput() {
 
-signup.onclick = function(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
-    var usernamesignup = document.getElementById("usernamesignup").value;
-    var passwordsignup = document.getElementById("passwordsignup").value;
+    password = hashPassword(password);
+  
+    localStorage.setItem(username, password);
 
     
-
-    
-
-    console.log(users);
-} 
+  } 
 
