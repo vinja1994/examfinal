@@ -40,7 +40,18 @@ class User {
 
 
   // Initialize an empty array
+
   var users = JSON.parse(localStorage.getItem("users"));
+
+  
+
+  if (users == null) {
+    users = [];
+    
+  }
+
+
+
   
   // Bind the button to a variable for later use
   var submit = document.getElementById('submit');
@@ -145,7 +156,6 @@ if(signup !== null){
   } 
 }
 
-
 // Creating connection between HTML and Javascript
 
 var calculate = function calculate() {
@@ -212,11 +222,3 @@ var number = amount * rates[select.value][select1.value]
 document.getElementById("amount").addEventListener("keyup", calculate);
 document.getElementById("select").addEventListener("change", calculate);
 document.getElementById("select1").addEventListener("change", calculate);
-
-
-
-
-
-
-
-

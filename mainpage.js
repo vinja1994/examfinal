@@ -112,7 +112,7 @@ function callbackFunc(response){
 
         html += "<option value='" + currency + "'>" + currency + "</option>";
     }
-//local storage
+//local storage currencies 
     localStorage.setItem("currencies", JSON.stringify(currenciesList));
 
     currencyFrom.innerHTML = html;
